@@ -10,7 +10,7 @@ export class HeroesComponent implements OnInit {
   
   hero: Hero = {
     id: 1,
-    name: 'Windstorm',
+    name: 'Type in the box below to see a change here!',
   }
 
   constructor() { }
