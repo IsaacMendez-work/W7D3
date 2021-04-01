@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero';
+import { HeroInterface } from '../hero-interface';
+import { HEROES } from '../mock-API';
 
 @Component({
   selector: 'app-heroes',
@@ -7,15 +8,15 @@ import { Hero } from '../hero';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
+  heroes = HEROES;
   
-  hero: Hero = {
+  hero: HeroInterface = {
     id: 1,
-    name: 'Type in the box below to see a change here!',
+    name: 'Change the textbox to change this title!',
   }
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
